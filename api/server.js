@@ -11,8 +11,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // Enable CORS for all routes
 server.use(cors({
-  // origin: 'https://mini-ecommerce-eight-lyart.vercel.app/', // or '*'
-  origin: '*', 
+  origin: 'https://mini-ecommerce-eight-lyart.vercel.app',
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
